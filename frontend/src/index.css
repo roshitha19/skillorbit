@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #07111F;
+  color: #F5F1E8;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07111F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C3554;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2A4B75;
+}
+
+/* Technical Dotted Grid & Orbital Lines */
+.bg-tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    radial-gradient(circle, rgba(141, 156, 175, 0.12) 1px, transparent 1px);
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 20%, rgba(11, 25, 40, 0.8) 0%, #07111F 100%);
+}
+
+.orbital-ring {
+  border: 1px dashed rgba(141, 156, 175, 0.2);
+  border-radius: 9999px;
+}
+
+.glow-lime {
+  box-shadow: 0 0 20px -3px rgba(215, 255, 85, 0.25);
+}
+
+.glow-coral {
+  box-shadow: 0 0 20px -3px rgba(255, 101, 93, 0.25);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
+}
